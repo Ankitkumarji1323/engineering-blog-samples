@@ -35,11 +35,11 @@ function entry() {
       worker.postMessage(name);
       worker.addEventListener("message", (event) => {
         if (event.data) {
-          club.appendChild(listItem);
+          club.appendChild(listitem);
         }
       });
     } else {
-      club.appendChild(listItem);
+      club.appendChild(listitem);
     }
   });
 }
